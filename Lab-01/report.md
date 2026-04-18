@@ -1,0 +1,1 @@
+I have learned alot in this first lab. It had github code mostly, I learned about different commands during this lab for github, I will still try to research more on github and learn even more functionality of it. 
