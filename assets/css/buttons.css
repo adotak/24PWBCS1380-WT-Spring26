@@ -1,0 +1,128 @@
+/* Task 5: Button Styling Collection */
+
+/* Base style for all buttons */
+button {
+    font-family: Arial, sans-serif;
+    cursor: pointer;
+    border: 1px solid #333;
+    background-color: #eee;
+    padding: 8px 16px;
+    margin: 5px;
+}
+
+button:hover {
+    opacity: 0.85;
+}
+
+button:focus {
+    outline: 2px solid #333;
+}
+
+/* Sizes */
+.btn-small {
+    font-size: 12px;
+    padding: 4px 10px;
+}
+
+.btn-medium {
+    font-size: 16px;
+    padding: 8px 18px;
+}
+
+.btn-large {
+    font-size: 20px;
+    padding: 12px 28px;
+}
+
+/* Colors */
+.btn-primary {
+    background-color: #3498db;
+    color: white;
+    border: 1px solid #2980b9;
+    transition: background-color 0.2s;
+}
+
+.btn-primary:hover {
+    background-color: #2980b9;
+}
+
+.btn-secondary {
+    background-color: #7f8c8d;
+    color: white;
+    border: 1px solid #606e6e;
+    transition: background-color 0.2s;
+}
+
+.btn-secondary:hover {
+    background-color: #606e6e;
+}
+
+.btn-danger {
+    background-color: #e74c3c;
+    color: white;
+    border: 1px solid #c0392b;
+    transition: background-color 0.2s;
+}
+
+.btn-danger:hover {
+    background-color: #c0392b;
+}
+
+/* Shapes */
+.btn-rounded {
+    border-radius: 8px;
+    background-color: #2ecc71;
+    color: white;
+    border: 1px solid #27ae60;
+}
+
+.btn-pill {
+    border-radius: 50px;
+    background-color: #9b59b6;
+    color: white;
+    border: 1px solid #8e44ad;
+}
+
+.btn-square {
+    border-radius: 0;
+    background-color: #e67e22;
+    color: white;
+    border: 1px solid #d35400;
+}
+
+/* Effects */
+.btn-shadow {
+    background-color: #fff;
+    color: #333;
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.2s;
+}
+
+.btn-shadow:hover {
+    box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.5);
+}
+
+.btn-gradient {
+    background: linear-gradient(to right, #3498db, #9b59b6);
+    color: white;
+    border: none;
+    transition: opacity 0.2s;
+}
+
+.btn-gradient:hover {
+    opacity: 0.85;
+}
+
+/* Disabled state */
+button[disabled] {
+    background-color: #ccc;
+    color: #888;
+    border: 1px solid #bbb;
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+button[disabled]:hover {
+    opacity: 0.6;
+}

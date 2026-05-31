@@ -1,0 +1,57 @@
+img {
+    max-width: 300px;
+    margin: 20px 0;
+}
+
+.rounded {
+    border-radius: 15px;
+}
+
+.circular {
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+}
+
+.bordered {
+    border: 5px solid #333;
+}
+
+.shadow {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+.hover-effect {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.hover-effect:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+.filter-grayscale {
+    filter: grayscale(100%);
+}
+
+.filter-blur {
+    filter: blur(5px);
+}
+
+.overlay-container {
+    position: relative;
+    width: 300px;
+}
+
+.overlay-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 10px;
+    text-align: center;
+    margin: 0;
+}

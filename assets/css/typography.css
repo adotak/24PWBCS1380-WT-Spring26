@@ -1,0 +1,109 @@
+.header{
+    font-family: Tangerine, serif;
+    font-size: 24px;
+    color: darkblue;
+    margin: 10px;
+}
+
+.FontSizes{
+    padding: 10px;
+    margin: 10px;
+}
+
+.FontSizes #ten{
+    background-color: lightgray;
+    font-size: 10px;
+    padding: 5px;
+    margin: 5px;
+}
+
+.FontSizes #twenty{
+    background-color: lightgray;
+    font-size: 20px;
+    padding: 5px;
+    margin: 5px;
+}
+
+.FontSizes #thirty{
+    background-color: lightgray;
+    font-size: 30px;
+    padding: 5px;
+    margin: 5px;
+}
+
+.FontSizes #forty{
+    background-color: lightgray;
+    font-size: 40px;
+    padding: 5px;
+    margin: 5px;
+}
+
+.FontSizes #fifty{
+    background-color: lightgray;
+    font-size: 50px;
+    padding: 5px;
+    margin: 5px;
+}
+
+.TextAlignment{
+    font-family: 'Roboto Slab', serif;
+    padding: 10px;
+    margin: 10px;
+}
+
+.TextAlignment #left{
+    text-align: left;
+}
+
+.TextAlignment #center{
+    text-align: center;
+}
+
+.TextAlignment #right{
+    text-align: right;
+}
+
+.TextDecoration{
+    font-family: Inconsolata, monospace;
+    padding: 10px;
+    margin: 10px;
+}
+
+.TextDecoration #underline{
+    text-decoration: underline;
+}
+
+.TextDecoration #overline{
+    text-decoration: overline;
+}
+
+.TextDecoration #line-through{
+    text-decoration: line-through;
+}
+
+.TextTransform{
+    font-family: 'Roboto Slab', serif;
+    padding: 10px;
+    margin: 10px;
+}
+
+.TextTransform #uppercase{
+    text-transform: uppercase;
+}
+
+.TextTransform #lowercase{
+    text-transform: lowercase;
+}
+
+.TextTransform #capitalize{
+    text-transform: capitalize;
+}
+
+.Shadow{
+    padding: 10px;
+    margin: 10px;
+}
+
+.Shadow #text-shadow{
+    text-shadow: 2px 2px 5px gray;
+}
