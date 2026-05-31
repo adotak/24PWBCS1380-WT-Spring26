@@ -33,11 +33,12 @@ Lab-03/
 ## Tasks Completed
 
 - [x] Task 5: Button Styling Collection (`Buttons.html`, `styles/components.css`)
-- [ ] Task 6: Form Styling
-- [ ] Task 7: Card Component Design
-- [ ] Task 8: Navigation Menu Styling
-- [ ] Task 9: CSS Transform Gallery
-- [ ] Task 10: Advanced Effects Showcase
-- [ ] Task 11: Personal Portfolio Styling
-- [ ] Task 12: Course Website Styling
-- [ ] Task 13: GitHub Pages Enhancement
+- [x] Task 6: Form Styling
+- [x] Task 7: Card Component Design
+- [x] Task 8: Navigation Menu Styling
+- [x] Task 9: CSS Transform Gallery
+- [x] Task 10: Advanced Effects Showcase
+- [x] Task 11: Personal Portfolio Styling
+- [x] Task 12: Course Website Styling
+- [x] Task 13: GitHub Pages Enhancement
+

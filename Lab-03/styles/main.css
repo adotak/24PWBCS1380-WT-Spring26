@@ -60,3 +60,365 @@ a {
 a:hover {
     color: #2980b9;
 }
+
+/* ---- NAVIGATION MENU (Task 8) ---- */
+.nav-horizontal {
+    background-color: #2c3e50;
+    border-radius: 6px;
+    padding: 0 15px;
+    margin: 20px 0;
+}
+
+.nav-horizontal ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.nav-horizontal ul li {
+    display: inline-block;
+    position: relative;
+    margin: 0;
+}
+
+.nav-horizontal ul li a {
+    display: block;
+    color: #ecf0f1;
+    text-decoration: none;
+    padding: 15px 20px;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+    border: none;
+}
+
+.nav-horizontal ul li a:hover,
+.nav-horizontal ul li a.active {
+    background-color: #34495e;
+    color: #3498db;
+    text-decoration: none;
+}
+
+/* Dropdown styling */
+.nav-horizontal ul li.dropdown:hover .dropdown-content {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    z-index: 100;
+    border-radius: 0 0 4px 4px;
+    top: 100%;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
+}
+
+.dropdown-content a {
+    color: #333;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border: none;
+    border-bottom: 1px solid #eee;
+    font-size: 14px;
+    transition: background-color 0.2s;
+}
+
+.dropdown-content a:last-child {
+    border-bottom: none;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+    color: #3498db;
+    text-decoration: none;
+}
+
+/* Vertical Menu styling */
+.nav-vertical {
+    background-color: #f4f6f7;
+    border-left: 4px solid #3498db;
+    max-width: 240px;
+    padding: 10px 0;
+    margin: 20px 0;
+    border-radius: 0 6px 6px 0;
+}
+
+.nav-vertical ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-vertical ul li {
+    display: block;
+    margin: 0;
+}
+
+.nav-vertical ul li a {
+    display: block;
+    color: #2c3e50;
+    text-decoration: none;
+    padding: 12px 20px;
+    font-weight: bold;
+    transition: background-color 0.3s, padding-left 0.3s;
+    border: none;
+}
+
+.nav-vertical ul li a:hover,
+.nav-vertical ul li a.active {
+    background-color: #eaecee;
+    color: #3498db;
+    padding-left: 25px;
+    text-decoration: none;
+}
+
+/* Responsive navigation elements */
+@media screen and (max-width: 600px) {
+    .nav-horizontal ul {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .nav-horizontal ul li {
+        width: 100%;
+    }
+    
+    .nav-horizontal ul li a {
+        padding: 12px 15px;
+    }
+    
+    .dropdown-content {
+        position: static;
+        box-shadow: none;
+        background-color: #2c3e50;
+        opacity: 1;
+        visibility: visible;
+        display: block;
+        transform: none;
+    }
+    
+    .dropdown-content a {
+        color: #ecf0f1;
+        padding-left: 30px;
+        background-color: #34495e;
+        border-bottom: 1px solid #2c3e50;
+    }
+}
+
+/* ---- PORTFOLIO / PROFILE STYLING (Task 11) ---- */
+.portfolio-header {
+    text-align: center;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #3498db, #2c3e50);
+    color: white;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+.portfolio-header h1 {
+    color: white;
+    margin-bottom: 10px;
+    font-family: inherit;
+}
+
+.portfolio-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.profile-img-styled {
+    display: block;
+    margin: 0 auto 20px auto;
+    border: 5px solid #fff;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease;
+}
+
+.profile-img-styled:hover {
+    transform: scale(1.05);
+}
+
+.portfolio-section {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+}
+
+.portfolio-section h2 {
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 8px;
+    margin-top: 0;
+    color: #2c3e50;
+}
+
+/* ---- COURSE SCHEDULE TABLE (Task 12) ---- */
+.table-responsive {
+    overflow-x: auto;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.course-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 15px;
+    text-align: left;
+    background-color: #fff;
+    min-width: 600px;
+}
+
+.course-table th {
+    background-color: #2c3e50;
+    color: white;
+    padding: 12px 15px;
+    font-weight: bold;
+    border-bottom: 3px solid #34495e;
+}
+
+.course-table td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+/* Zebra striping */
+.course-table tbody tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+/* Row hover effect */
+.course-table tbody tr:hover {
+    background-color: #f1f2f6;
+    transition: background-color 0.2s;
+}
+
+/* Color-coded course types */
+.course-theory {
+    background-color: #e3f2fd !important;
+    color: #0d47a1;
+    font-weight: bold;
+    border-left: 4px solid #2196f3;
+}
+
+.course-lab {
+    background-color: #e8f5e9 !important;
+    color: #1b5e20;
+    font-weight: bold;
+    border-left: 4px solid #4caf50;
+}
+
+.course-break {
+    background-color: #fff3e0 !important;
+    color: #e65100;
+    font-style: italic;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* ---- GITHUB PAGES DESIGN (Task 13) ---- */
+.github-layout {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.github-header {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    padding: 30px;
+    border-radius: 8px 8px 0 0;
+    text-align: center;
+    border-bottom: 4px solid #3498db;
+}
+
+.github-header h1 {
+    color: #ffffff;
+    margin: 0;
+}
+
+.github-nav {
+    background-color: #2b2b2b;
+    padding: 10px 20px;
+    border-radius: 0 0 8px 8px;
+    margin-bottom: 30px;
+}
+
+.github-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.github-nav a {
+    color: #b3b3b3;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.2s;
+    border: none;
+}
+
+.github-nav a:hover {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.github-main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .github-main {
+        grid-template-columns: 1fr;
+    }
+}
+
+.github-card {
+    background-color: #fff;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.github-card h2 {
+    margin-top: 0;
+    color: #24292f;
+}
+
+.github-project-list {
+    list-style: none;
+    padding: 0;
+}
+
+.github-project-list li {
+    padding: 10px 0;
+    border-bottom: 1px solid #e1e4e8;
+}
+
+.github-project-list li:last-child {
+    border-bottom: none;
+}
+

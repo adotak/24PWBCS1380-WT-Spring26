@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Styling - Lab 03</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/components.css">
+</head>
+<body>
+    <nav>
+        <h2>Navigation</h2>
+        <ul>
+            <li><a href="Index.html">Back to Lab 03 Index</a></li>
+            <li><a href="../Index.html">Home</a></li>
+            <li><a href="../Lab-02/Index.html">Lab 02</a></li>
+        </ul>
+    </nav>
+    <hr>
+
+    <div class="container">
+        <h1>Task 6: Form Styling</h1>
+        <p>This demonstration showcases custom inputs, focus highlights, and validation state stylings.</p>
+
+        <form onsubmit="event.preventDefault();">
+            <div class="form-group">
+                <label for="name">Name (Success State Example):</label>
+                <input type="text" id="name" class="input-success" value="Ahmad Aziz" placeholder="Enter name">
+                <span class="success-message">Username is valid and available!</span>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email (Error State Example):</label>
+                <input type="email" id="email" class="input-error" value="invalid-email@domain" placeholder="Enter email">
+                <span class="error-message">Please enter a valid email address.</span>
+            </div>
+
+            <div class="form-group">
+                <label for="country">Country (Dropdown styling):</label>
+                <select id="country">
+                    <option>Select Country</option>
+                    <option selected>Pakistan</option>
+                    <option>USA</option>
+                    <option>UK</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" rows="4" placeholder="Enter your message..."></textarea>
+            </div>
+
+            <button type="submit" class="btn-submit">Submit</button>
+            <button type="reset" class="btn-reset">Reset</button>
+        </form>
+    </div>
+</body>
+</html>
