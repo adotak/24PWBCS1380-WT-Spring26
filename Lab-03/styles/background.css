@@ -1,0 +1,85 @@
+.solid-background #Black {
+    background-color: black;
+    padding: 20px;
+    margin: 20px;
+}
+
+.solid-background #Red {
+    background-color: red;
+    padding: 20px;
+    margin: 20px;
+}
+
+.solid-background #Green {
+    background-color: green;
+    padding: 20px;
+    margin: 20px;
+    color: white;
+}
+
+.solid-background #Blue {
+    background-color: blue;
+    padding: 20px;
+    margin: 20px;
+    color: white;
+}
+
+.image-background #solid {
+    background-image: url('C:\\Users\\PMYLS\\Documents\\Projects\\Web\\24PWBCS1380-WT-Spring26\\assets\\images\\whitetulips.jpeg');
+    background-size: cover;
+    padding: 40px;
+    margin: 20px;
+}
+
+.image-background #repeat {
+    background-image: url('C:\\Users\\PMYLS\\Documents\\Projects\\Web\\24PWBCS1380-WT-Spring26\\assets\\images\\whitetulips.jpeg');
+    background-repeat: repeat;
+    padding: 40px;
+    margin: 20px;
+}
+
+.image-background #position {
+    background-image: url('C:\\Users\\PMYLS\\Documents\\Projects\\Web\\24PWBCS1380-WT-Spring26\\assets\\images\\whitetulips.jpeg');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 40px;
+    margin: 20px;
+}
+
+.image-background #transparent {
+    background-image: url('C:\\Users\\PMYLS\\Documents\\Projects\\Web\\24PWBCS1380-WT-Spring26\\assets\\images\\whitetulips.jpeg');
+    background-opacity: 0.5;
+    padding: 40px;
+    margin: 20px;
+    opacity: 0.7;
+}
+
+.gradient-background #linear {
+    background: linear-gradient(to right, #ff0000, #0000ff);
+    padding: 40px;
+    margin: 20px;
+    color: white;
+}
+
+.gradient-background #radial {
+    background: radial-gradient(circle, #ffff00, #ff6600);
+    padding: 40px;
+    margin: 20px;
+}
+
+.multiple-background #multiple {
+    background: linear-gradient(45deg, rgba(255,0,0,0.5), rgba(0,0,255,0.5)), url('C:\\Users\\PMYLS\\Documents\\Projects\\Web\\24PWBCS1380-WT-Spring26\\assets\\images\\whitetulips.jpeg');
+    background-size: cover;
+    padding: 40px;
+    margin: 20px;
+    color: white;
+}
+
+.blend-mode-background #blend {
+    background: linear-gradient(45deg, #ff0000, #0000ff);
+    background-blend-mode: multiply;
+    padding: 40px;
+    margin: 20px;
+    color: white;
+}
